@@ -17,8 +17,15 @@ $gray-lt: #F9FFFF;
 
 /* universal */
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   background-color: $brown-lt;
+  overflow-x: hidden;
+  margin-bottom: 40px;
 }
 
 .well {
@@ -80,6 +87,22 @@ header {
     a {
       color: $blue-dk;
     }
+  }
+}
+
+/* Footer */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  background-color: $gray-lt;
+  border-top: 1px solid $brown-dk;
+  p {
+    line-height: 1;
+    padding-top: 10px;
   }
 }
 
