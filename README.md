@@ -6,7 +6,8 @@ Members can post public messages, but only members can see who posted the messag
 
 ## Live Demo
 [Members Only on Heroku](https://members-only-top.herokuapp.com/)
-View the 'about' page to find login information!
+
+(View the 'about' page to find login information!)
 
 ## Installing
 This deploys easily, as a fairly simple Rails app with limited dependencies.  Just remember to run `rails db:seed` after `rails db:migrate`, in order to have a few initial members to work with!
