@@ -1,7 +1,7 @@
 <% provide(:title, "Secret Posts") %>
 
 <h1>Posts</h1>
-<div class="container-fluid col-md-6 col-md-offset-3">
+<div class="container-fluid col-md-6 col-md-offset-3 posts">
   <% if logged_in? %>
     <%= link_to "Create new post", new_post_path, class: 'btn btn-default', id: 'post-button' %>
   <% end %>

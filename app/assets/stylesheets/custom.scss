@@ -24,12 +24,15 @@ html {
 
 body {
   background-color: $brown-lt;
-  overflow-x: hidden;
   margin-bottom: 40px;
 }
 
 .well {
   background-color: $gray-lt;
+}
+
+.posts {
+  margin-bottom: 40px;
 }
 
 /* typography */
