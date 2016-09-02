@@ -1,13 +1,19 @@
 class User < ApplicationRecord
   attr_accessor :remember_token
 
+  # Associations
+  has_many :posts, dependent: :destroy
+  
+  # Callbacks
   before_save :downcase_email
 
+  # Validations
   validates :name,  presence: true, length: { maximum: 50 }
   validates :email, presence: true, length: { maximum: 255 }, 
                     uniqueness: { case_sensitive: false }
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }
+
 
   # Remember the user in the database, for use in persistent sessions
   def remember

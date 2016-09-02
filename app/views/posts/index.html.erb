@@ -1,0 +1,20 @@
+<% provide(:title, "Secret Posts") %>
+
+<h1>Posts</h1>
+<div class="container-fluid col-md-6 col-md-offset-3">
+  <% if logged_in? %>
+    <%= link_to "Create new post", new_post_path, class: 'btn btn-default', id: 'post-button' %>
+  <% end %>
+  
+  <% @posts.each do |post| %>
+    <% post_author = logged_in? ? post.user.name : '???????' %>
+    <div class="well">
+      <p class="post-body"><%= post.body %></p>
+      <span class="owner">
+        <em><%= post.created_at.strftime('%b. %d, %Y') %></em>
+        <br />
+        <em>By:</em> <%= post_author %>
+      </span>
+    </div>
+  <% end %>
+</div>
