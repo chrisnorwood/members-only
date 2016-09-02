@@ -1,4 +1,64 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/* Custom styles for members-only */
+/* universal */
+
+body {
+  padding-top: 60px;
+  background-color: #FFEBDF;
+}
+
+.well {
+  background-color: #F9FFFF;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+/* header */
+
+header {
+  margin-top: 15px;
+
+  #logo {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.navbar {
+  background-color: #F9FFFF;
+  border: 0;
+}
+
+.nav {
+  list-style: none;
+  float: right;
+  li {
+    line-height: 30px;
+    float: left;
+  }
+}
